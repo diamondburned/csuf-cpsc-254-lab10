@@ -16,6 +16,7 @@ recursiveHash=$(
 		| cut -d' ' -f1
 	)
 if [[ "$recursiveHash" == "$CORRECT_HASH" ]]; then
+	echo "Hashes match. You're good to go!"
 	exit 0
 fi
 
