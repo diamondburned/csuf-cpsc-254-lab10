@@ -44,4 +44,8 @@ if [[ ! -d node_modules ]]; then
 	fail=1
 fi
 
+if [[ $fail == 0 ]]; then
+	echo "All checks passed!"
+fi
+
 exit $fail
